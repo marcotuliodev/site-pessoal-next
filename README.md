@@ -242,3 +242,16 @@ Caso retorne a versão do Yarn (acima de 1.0, abaixo de 2.0), a instalação oco
 ### Possíveis problemas
 
 Ao usar o Yarn no Windows para instalar as dependências nos seus projetos, atente-se para que seu nome de usuário não possua espaços, pois nesse caso, alguns erros poderão ocorrer durante esse processo, como por exemplo: com o nome "Diego Fernandes", o caminho até a pasta do projeto (supondo que estivesse na pasta *Documents*) seria algo como `C:\Users\Diego Fernandes\Documents\NLW\Projeto` e nesse caso, uma solução seria criar o projeto já na raiz do **Disco C**. Dessa forma, o caminho até a pasta não passaria pelo nome do usuário, ficando `C:\NLW\Projeto`.
+
+
+---
+# Melhorias Possíveis no Projeto 
+
+## Responsividade
+  - Melhorar a responsividade para telas menores (mobile)
+## PWA 
+	- Pesquisar sobre Next PWA 
+## Tema Dark 
+	- Tentar seguir as cores do Omni que foi baseado no Drácula
+## Electron 
+	- Desenvolver um app que pudesse ser acessíve via Desktop
