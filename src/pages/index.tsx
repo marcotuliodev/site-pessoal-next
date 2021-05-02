@@ -33,7 +33,7 @@
 
 import { GetStaticProps } from 'next'
 import Image from 'next/image'
-import { api } from '../services/api'
+// import { api } from '../services/api'
 import { format, parseISO } from 'date-fns'
 import ptBR from 'date-fns/locale/pt-BR'
 import { convertDurationToTimeString } from '../utils/convertDuration'
@@ -41,6 +41,7 @@ import styles from './home.module.scss'
 import Link from 'next/link'
 import { usePlayer } from '../store/PlayerContext'
 import Head from 'next/head'
+import { episodesGroup } from '../constants/episodesGroup'
 
 type Episode = {
   id: string
@@ -149,16 +150,17 @@ export default function Home({ latestEpisodes, allEpisodes }: HomeProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const response = await api.get('episodes', {
-    params: {
-      _limit: 12,
-      _sort: 'published_at',
-      _order: 'desc'
-    }
-  })
+  // USING JSON SERVER
+  // const response = await api.get('episodes', {
+  //   params: {
+  //     _limit: 12,
+  //     _sort: 'published_at',
+  //     _order: 'desc'
+  //   }
+  // })
+  // const data = await response.data
 
-  const data = await response.data
-  const episodes = data.map(episode => {
+  const episodes = episodesGroup.map(episode => {
     return {
       id: episode.id,
       title: episode.title,
