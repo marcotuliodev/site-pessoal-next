@@ -1,0 +1,145 @@
+.sideMenuContainer {
+    padding: 15rem 2rem;
+    width: 26.5rem;
+    height: 100vh;
+
+    background: rgb(0,203,204);
+    background: linear-gradient(209deg, rgba(0,203,204,1) 0%, rgba(25,115,157,1) 50%, rgba(39,64,130,1) 80%, rgba(53,14,102,1) 100%);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    header{
+        display: flex;
+        align-items: center;
+        margin-bottom: 0px;
+    }
+
+    strong {
+        font-family: Lexend, sans-serif;
+        font-weight: 600;
+        color: white;
+    }
+
+    footer{
+        align-self: stretch;
+
+        &.empty .progress {
+            opacity: 0.5;
+        }
+    }
+}
+
+.sideMenuAvatar{
+    width: 100%;
+    height: 10rem;
+    border: 1.5px solid #274082;
+    border-radius: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar{
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15rem;
+    width: 100%;
+    strong {
+        font-family: Lexend, sans-serif;
+        font-size: 3rem;
+        font-weight: 600;
+        color: white;
+        padding-top: 1rem;
+    }
+}
+
+.menuOptions{
+    padding: 4rem;
+    padding-top: 8rem;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    margin-bottom: 2rem;
+    
+    strong {
+        font-family: Lexend, sans-serif;
+        font-weight: 600;
+        color: white;
+        padding-bottom: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+.socialMedia{
+    padding: 3rem 1rem 1rem 1rem;
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+
+    strong {
+        font-family: Lexend, sans-serif;
+        font-weight: 600;
+        color: white;
+        padding-bottom: 1rem;
+    }
+}
+
+.socialMediaHeaderIcons {
+    width: 100%;
+    height: 5rem;
+    border-radius: 5rem;
+    // background: linear-gradient(143.8deg, #f5f5f5, #f5f5f5 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.sideMenuAvatar{
+    width: 100%;
+    height: 5rem;
+    border: 5px solid white !important;
+    border-radius: 5rem;
+    // background: linear-gradient(143.8deg, #f5f5f5, #f5f5f5 100%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+    gap: 1.5rem;
+
+   
+}
+
+.button {
+    width: 100%;
+    height: 2rem;
+    cursor: pointer !important;
+    padding: 1px !important;
+    border: none !important;
+    color: white !important;
+    background-color: transparent !important;
+    font-size: 1.2rem !important;
+    margin: 1rem !important;
+}

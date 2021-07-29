@@ -1,7 +1,7 @@
 .headerContainer {
     background-color: var(--white);
     height: 6.5rem;
-
+    width: 100%;
     display: flex;
     align-items: center;
     
@@ -19,4 +19,16 @@
         margin-left: auto;
         text-transform: capitalize;
     }
+}
+
+.sideMenuAvatar{
+    width: 100%;
+    height: 10rem;
+    border: 5px solid white !important;
+    border-radius: 10rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
 }
